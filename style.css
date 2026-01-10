@@ -13,7 +13,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 1em;
-  background: rgba(0, 103, 172, 0.774);
+  background: rgba(3, 25, 36, 0.932);
 }
 
 /* Logo */
@@ -66,3 +66,35 @@ header {
   transform: translateY(-2px);
 }
 /* hero section */
+.hero {
+  height: 90vh;
+  background: url(img/hero/hero_img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+}
+.hero-content {
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content button {
+  color: white;
+  background: chocolate;
+  padding: 9px;
+  border-radius: 3em;
+  border-color: transparent;
+  font-size: 1em;
+  font-weight: 600;
+}
+.hero-content button:hover {
+  transform: translateY(-2px);
+  background: #08a5b9;
+}
