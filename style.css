@@ -272,3 +272,357 @@ header {
   font-size: 0.9rem;
   opacity: 0.9;
 }
+
+/* Testimonials Section */
+.testimonials {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 80px 20px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '"';
+  position: absolute;
+  font-size: 300px;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: Georgia, serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.testimonials > div {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-img {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #3b82f6;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-img:hover img {
+  transform: scale(1.1);
+}
+
+.testimonial-info {
+  flex: 1;
+  color: #ffffff;
+}
+
+.testimonial-info h4 {
+  font-size: 2rem;
+  color: #3b82f6;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.testimonial-info h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.testimonial-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+}
+
+.testimonial-info p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+}
+
+.foot {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.slogan {
+  text-align: center;
+}
+
+.slogan h3 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.slogan::after {
+  content: "🌟";
+  display: block;
+  font-size: 2rem;
+  margin-top: 10px;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-info i {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.contact-info i:hover {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-info i::before {
+  font-size: 1.2rem;
+  color: #3b82f6;
+  width: 24px;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright p {
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 3px solid #3b82f6;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-links i:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-links i.fa-facebook:hover {
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.1);
+}
+
+.social-links i.fa-x-twitter:hover {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.social-links i.fa-instagram:hover {
+  color: #e4405f;
+  background: rgba(228, 64, 95, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .testimonial-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .testimonial-info h4 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-info h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .testimonial-info p {
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .testimonial-info p::before {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 4px;
+  }
+
+  .foot {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-info i {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 60px 15px;
+  }
+
+  .testimonial-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .testimonial-info h4 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-info p {
+    font-size: 1rem;
+  }
+
+  .slogan h3 {
+    font-size: 1.5rem;
+  }
+
+  .social-links i {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Animations */
+.testimonials > div {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
